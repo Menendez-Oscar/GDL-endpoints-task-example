@@ -1,0 +1,12 @@
+
+# Change endpoints-app to whatever your app id is
+application: endpoints-app
+version: 1
+runtime: python27
+threadsafe: true
+api_version: 1
+
+handlers:
+# Endpoints handler
+- url: /_ah/spi/.*
+  script: main.application
